@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding planner landing page</title>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+    <script src="./js.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header>
+        <div class="header row container">
+            <a href="#" class="logo mobile"><img src="./imgs/LogoT&C.svg" alt=""></a>
+            <div class="toggleMenu" onclick="toggleMenu();"></div>
+            <nav class="navigation row">
+                <ul class="row">
+                    <li><a href="#">O Menu</a></li>
+                    <li><a href="#">A História</a></li>
+                    <li><a href="#">A Quinta</a></li>
+                    <li class="desktop"><a href="#"><img src="./imgs/LogoT&C.svg" alt=""></a></li>
+                    <li><a href="#">O Itenerário</a></li>
+                    <li><a href="#">Os Alojamentos</a></li>
+                    <li><a href="#">A tua Resposta</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- End Navigation -->
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <video src="./video.mp4"controls autoplay loop muted></video>
+        <div class="hero-content row container">
+            <div>
+                <h1>Tiago <span>&</span> Carina</h1>
+                <h2>21-09-2024</h2>
+            </div>
+        </div>
+    </section>
+    <!-- ENd Hero Section -->
+
+    <!-- Story -->
+    <section class="story">
+        <div class="container">
+            <h1>Our Story</h1>
+            <div class="story-content">
+                <div class="row flex">
+                    <div>
+                        <h5>May 2019</h5>
+                        <h2>We meet</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente inventore voluptas veniam
+                            quis ipsa reiciendis, optio tempora incidunt dolorem est eius ullam adipisci assumenda non
+                            dignissimos praesentium at sunt cupiditate.</p>
+                    </div>
+                    <div class="img row"><img src="./imgs/img1.png" alt=""></div>
+                </div>
+                <div class="row flex">
+                    <div>
+                        <h5>Jun 2022</h5>
+                        <h2>Is it love?</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente inventore voluptas veniam
+                            quis ipsa reiciendis, optio tempora incidunt dolorem est eius ullam adipisci assumenda non
+                            dignissimos praesentium at sunt cupiditate.</p>
+                    </div>
+                    <div class="img row"><img src="./imgs/img1.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Story -->
+
+    <!-- The Venue -->
+    <section class="venue">
+        <div class="row flex container">
+            <div class="venue-content">
+                <h5>The venue</h5>
+                <h2>Gino winery estate</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, nulla quo! Maxime, dolore odio
+                    optio sint quisquam saepe fuga ipsum asperiores similique sit id consequuntur quam placeat
+                    recusandae excepturi eius.</p>
+                <div>
+                    <p>4577 Tyler Avenue</p>
+                    <p>Boise, Idaho 87609</p>
+                </div>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./imgs/s1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./imgs/s2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./imgs/s3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./imgs/s4.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./imgs/s5.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./imgs/s6.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./imgs/s7.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./imgs/s8.jpg" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End The Venue -->
+
+    <!-- Accommodation -->
+    <section class="accommodation">
+        <div class="container">
+            <h2>Accommodation</h2>
+            <div class="a-cards column">
+                <div class="a-card">
+                    <h3>Hotel 1</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A saepe commodi, voluptas suscipit id,
+                        eaque officia, dicta quod natus iste molestiae distinctio alias quos aperiam cumque impedit
+                        maiores atque quia?</p>
+                    <a href="#" class="page-btn">Book</a>
+                </div>
+                <div class="a-card">
+                    <h3>Hotel 2</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A saepe commodi, voluptas suscipit id,
+                        eaque officia, dicta quod natus iste molestiae distinctio alias quos aperiam cumque impedit
+                        maiores atque quia?</p>
+                    <a href="#" class="page-btn">Book</a>
+                </div>
+                <div class="a-card">
+                    <h3>Hotel 3</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A saepe commodi, voluptas suscipit id,
+                        eaque officia, dicta quod natus iste molestiae distinctio alias quos aperiam cumque impedit
+                        maiores atque quia?</p>
+                    <a href="#" class="page-btn">Book</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Accommodation -->
+
+    <!-- Bridal Party -->
+    <section class="bridal">
+        <div class="container">
+            <h2>The bridal party</h2>
+            <div class="filters row flex">
+                <div class="filter-btns row">
+                    <div class="filter-btn active" data-tab="1">Groomsmen</div>
+                    <div class="filter-btn" data-tab="2">Bridalmaids</div>
+                </div>
+                <div class="filter-cards row tab1 t-active">
+                    <div>
+                        <img src="./imgs/img4.jpg" alt="">
+                        <h4>Yna ookri</h4>
+                    </div>
+                    <div>
+                        <img src="./imgs/img5.jpg" alt="">
+                        <h4>Yna ookri</h4>
+                    </div>
+                    <div>
+                        <img src="./imgs/img6.jpg" alt="">
+                        <h4>Yna ookri</h4>
+                    </div>
+                    <div>
+                        <img src="./imgs/img7.jpg" alt="">
+                        <h4>Yna ookri</h4>
+                    </div>
+                </div>
+                <div class="filter-cards row tab2">
+                    <div>
+                        <img src="./imgs/img4.jpg" alt="">
+                        <h4>Yna ookri</h4>
+                    </div>
+                    <div>
+                        <img src="./imgs/img5.jpg" alt="">
+                        <h4>Yna ookri</h4>
+                    </div>
+                    <div>
+                        <img src="./imgs/img6.jpg" alt="">
+                        <h4>Yna ookri</h4>
+                    </div>
+                    <div>
+                        <img src="./imgs/img7.jpg" alt="">
+                        <h4>Yna ookri</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Bridal Party -->
+
+    <!-- Itinerary -->
+    <section class="itinerary">
+        <div class="container">
+            <h2>Itinerary</h2>
+            <div class="filter-btns row">
+                <div class="filter-btn active" data-tab="1">Friday, Jully 11</div>
+                <div class="filter-btn" data-tab="2">Saturday, Jully 12</div>
+                <div class="filter-btn" data-tab="3">Sunday, Jully 13</div>
+            </div>
+            <div class="filter-cards tab1 t-active">
+                <div class="row">
+                    <div class="time">
+                        <h5>10am</h5>
+                    </div>
+                    <div>
+                        <h3>Item Title</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni unde enim vel. Incidunt, quia
+                            maiores minima reiciendis perspiciatis culpa repellendus fugiat nam eaque ex at quae
+                            blanditiis,
+                            quaerat, ipsam asperiores.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="time">
+                        <h5>12pm</h5>
+                    </div>
+                    <div>
+                        <h3>Item Title</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni unde enim vel. Incidunt, quia
+                            maiores minima reiciendis perspiciatis culpa repellendus fugiat nam eaque ex at quae
+                            blanditiis,
+                            quaerat, ipsam asperiores.</p>
+                        <h3>Item Title</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni unde enim vel. Incidunt, quia
+                            maiores minima reiciendis perspiciatis culpa repellendus fugiat nam eaque ex at quae
+                            blanditiis,
+                            quaerat, ipsam asperiores.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-cards tab2">
+                <div class="row">
+                    <div class="time">
+                        <h5>10am</h5>
+                    </div>
+                    <div>
+                        <h3>Item Title</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni unde enim vel. Incidunt, quia
+                            maiores minima reiciendis perspiciatis culpa repellendus fugiat nam eaque ex at quae
+                            blanditiis,
+                            quaerat, ipsam asperiores.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="time">
+                        <h5>12pm</h5>
+                    </div>
+                    <div>
+                        <h3>Item Title</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni unde enim vel. Incidunt, quia
+                            maiores minima reiciendis perspiciatis culpa repellendus fugiat nam eaque ex at quae
+                            blanditiis,
+                            quaerat, ipsam asperiores.</p>
+                        <h3>Item Title</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni unde enim vel. Incidunt, quia
+                            maiores minima reiciendis perspiciatis culpa repellendus fugiat nam eaque ex at quae
+                            blanditiis,
+                            quaerat, ipsam asperiores.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-cards tab3">
+                <div class="row">
+                    <div class="time">
+                        <h5>10am</h5>
+                    </div>
+                    <div>
+                        <h3>Item Title</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni unde enim vel. Incidunt, quia
+                            maiores minima reiciendis perspiciatis culpa repellendus fugiat nam eaque ex at quae
+                            blanditiis,
+                            quaerat, ipsam asperiores.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="time">
+                        <h5>12pm</h5>
+                    </div>
+                    <div>
+                        <h3>Item Title</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni unde enim vel. Incidunt, quia
+                            maiores minima reiciendis perspiciatis culpa repellendus fugiat nam eaque ex at quae
+                            blanditiis,
+                            quaerat, ipsam asperiores.</p>
+                        <h3>Item Title</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni unde enim vel. Incidunt, quia
+                            maiores minima reiciendis perspiciatis culpa repellendus fugiat nam eaque ex at quae
+                            blanditiis,
+                            quaerat, ipsam asperiores.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Itinerary -->
+
+    <!-- Registry -->
+    <section class="registry row flex container">
+        <div>
+            <h2>Registry</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti fugiat, consequatur a culpa nostrum,
+                esse explicabo eaque excepturi cum eum vitae ipsum suscipit magnam pariatur animi. Laboriosam eos
+                repellat vitae.</p>
+        </div>
+        <div class="registry-cards column">
+            <div><img src="./imgs/logo1.svg" alt=""></div>
+            <div><img src="./imgs/logo2.svg" alt=""></div>
+            <div><img src="./imgs/logo3.svg" alt=""></div>
+            <div><img src="./imgs/logo4.svg" alt=""></div>
+        </div>
+    </section>
+    <!-- End Registry -->
+
+    <!-- RSVP -->
+    <section class="rsvp">
+        <div class="container">
+            <h2>RSVP</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo obcaecati quia, ea est incidunt optio dicta
+                nostrum ipsam provident quam aperiam voluptatem explicabo, consequatur eaque perferendis autem
+                reiciendis saepe! At!</p>
+            <form action="https://formsubmit.co/carinaandtiago@gmail.com" method="post" >
+                <div class="form row">
+                    <div class="input row">
+                        <label for="">First Name <span>*</span></label>
+                        <input type="text" name="first name" id=""required>
+                    </div>
+                    <div class="input row">
+                        <label for="">Last Name <span>*</span></label>
+                        <input type="text" name="last name" id="" required>
+                    </div>
+                    <div class="input row">
+                        <label for="">Email Address <span>*</span></label>
+                        <input type="email" name="email" id="" required>
+                    </div>
+                    <div class="input row">
+                        <label for="">Number of Guests <span>*</span></label>
+                        <input type="number" name="number of guests" id="" required>
+                    </div>
+                    <div class="input row">
+                        <label for="">Attendance <span>*</span></label>
+                        <div class="option row">
+                            <div class="row">
+                                <input type="checkbox" name="" id="">
+                                Accept with pleasure
+                            </div>
+                            <div class="row">
+                                <input type="checkbox" name="" id="">
+                                Regretfully Decline
+                            </div>
+                            <div class="row">
+                                <input type="checkbox" name="" id="">
+                                Rehearsal Dinner
+                            </div>
+                            <div class="row">
+                                <input type="checkbox" name="" id="">
+                                Ceremony
+                            </div>
+                            <div class="row">
+                                <input type="checkbox" name="" id="">
+                                Reception
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" valeu="Send" class="page-btn row">Submit</button>
+            </form>
+        </div>
+    </section>
+    <!-- ENd RSVP -->
+
+    <!-- Footer -->
+    <footer class="container">
+        <ul class="row">
+            <li><a href="#">home</a></li>
+            <li><a href="#">Our story</a></li>
+            <li><a href="#">Venue</a></li>
+            <li><a href="#">Itinerary</a></li>
+            <li><a href="#">Registry</a></li>
+            <li><a href="#">RSVP</a></li>
+        </ul>
+        <p class="copy-right">&copy; 2022. MuteCoder All Right Reserved</p>
+    </footer>
+    <!-- End Footer -->
+</body>
+
+</html>
