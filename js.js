@@ -4,6 +4,17 @@ function toggleMenu() {
     const navigation = document.querySelector(".navigation");
     toggleMenu.classList.toggle("active");
     navigation.classList.toggle("active");
+
+      // Close the mobile menu when clicking on a navigation link
+      const navLinks = document.querySelectorAll("nav a");
+      navLinks.forEach((link) => {
+          link.addEventListener("click", function () {
+              if (window.innerWidth <= 768) {
+                  navigation.classList.remove("active");
+                  toggleMenu.classList.remove("active");
+              }
+          });
+      });
 }
 // End Navigation
 
