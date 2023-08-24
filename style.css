@@ -11,8 +11,8 @@
 
 body {
     --cl--1--: #fcf9f7;
-    --cl--2--: #0c0a29;
-    --cl--3--: #e09b06;
+    --cl--2--: #054F77;
+    --cl--3--: #F8CE49;
     background: var(--cl--1--);
     margin: 0;
 }
@@ -222,7 +222,7 @@ footer a:hover {
 
 /* Venue */
 .venue {
-    background-image: url(./imgs/leaf.svg);
+    /* background-image: url(./imgs/leaf.svg); */
     background-repeat: no-repeat;
     background-position: left center;
     background-size: contain;
