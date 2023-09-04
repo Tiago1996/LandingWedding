@@ -27,9 +27,9 @@
                     <li><a href="#story">A História</a></li>
                     <li><a href="#venue">A Quinta</a></li>
                     <li class="desktop"><a href="#"><img src="./imgs/LogoT&C.svg" alt=""></a></li>
-                    <li><a href="#">O Itenerário</a></li>
-                    <li><a href="#">Os Alojamentos</a></li>
-                    <li><a href="#">A tua Resposta</a></li>
+                    <li><a href="#itinerary">O Itenerário</a></li>
+                    <li><a href="#accommodation">Os Alojamentos</a></li>
+                    <li><a href="#rsvp">A tua Resposta</a></li>
                 </ul>
             </nav>
         </div>
@@ -121,7 +121,7 @@
     <!-- End The Venue -->
 
     <!-- Itinerary -->
-    <section class="itinerary">
+    <section class="itinerary" id="itinerary">
         <div class="container">
             <h2>Itenerário</h2>
             <div class="filter-btns row">
@@ -227,7 +227,7 @@
     <!-- End Itinerary -->
 
      <!-- Accommodation -->
-     <section class="accommodation">
+     <section class="accommodation" id="accommodation">
         <div class="container">
             <h2>Onde Ficar</h2>
             <div class="a-cards column">
@@ -251,13 +251,11 @@
                     <a href="https://www.casadonamarialuiza.com/"  target="_blank" class="page-btn">Reservar</a>
                 </div>
                 <div class="a-card">
-                    <h3>Quinta das Aveleiras</h3>
-                    <p>A Quinta das Aveleiras é uma quinta tranquila, rodeada pela natureza, em Torre de Moncorvo. 
-                        A propriedade inclui uma piscina exterior com vista panorâmica para os jardins verdejantes e para a Serra do Reboredo.
-                        Todas as casas rústicas da Quinta possuem ar-condicionado, lareira, banheiro privativo com amenidades de banho gratuitas, 
-                        TV de tela plana, cozinha compacta totalmente equipada, área para refeições separada e vista para as montanhas e pontos turísticos locais. 
-                        Algumas das unidades típicas do Douro também incluem um pátio.</p>
-                    <a href="https://www.hoteisfind.com/casa-da-avo-turismo-de-habitacao/" target="_blank" class="page-btn">Reservar</a>
+                    <h3>Quintal do Grémio</h3>
+                    <p>O alojamento Quintal do Grémio, fica situado no coração da Vila de Torre de Moncorvo.
+                        Os hóspedes deste alojamento de acomodação e pequeno-almoço podem desfrutar de um pequeno-almoço continental.
+                        Podem ainda relaxar no jardim, ao lado da piscina exterior, no terraço para banhos de sol ou na área de estar partilhada.</p>
+                    <a href="https://www.booking.com/hotel/pt/quintal-do-gremio.pt-pt.html" target="_blank" class="page-btn">Reservar</a>
                 </div>
             </div>
         </div>
@@ -266,7 +264,7 @@
     
 
     <!-- RSVP -->
-    <section class="rsvp">
+    <section class="rsvp" id="rsvp">
         <div class="container">
             <h2>Respostas</h2>
             <p>Queridos convidados, confirmem a vossa presença, até dois meses antes, conforme solicitado no convite.
@@ -287,7 +285,8 @@
                         <input type="email" name="email" id="" required>
                     </div>
                     <div class="input row">
-                        
+                        <label for="">Número de Pessoas <span>*</span></label>
+                        <input type="email" name="email" id="" required>
                     </div>
                     <div class="input row">
                         <label for=""> Confirma a tua Presença <span>*</span></label>
@@ -309,18 +308,6 @@
     </section>
     <!-- ENd RSVP -->
 
-    <!-- Footer -->
-    <footer class="container">
-        <ul class="row">
-            <li><a href="#">O Menu</a></li>
-            <li><a href="#">A História</a></li>
-            <li><a href="#">A Quinta</a></li>
-            <li><a href="#">O Itenerário</a></li>
-            <li><a href="#">Os Alojamentos</a></li>
-            <li><a href="#">A Tua Resposta</a></li>
-        </ul>
-    </footer>
-    <!-- End Footer -->
 </body>
 
 </html>
