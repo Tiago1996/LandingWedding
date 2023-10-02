@@ -178,6 +178,10 @@ footer a:hover {
     padding: 4em 0;
 }
 
+.row.flex p {
+    font-size: 20px;
+}
+
 .story h1 {
     color: var(--cl--1--);
 }
